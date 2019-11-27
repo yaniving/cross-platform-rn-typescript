@@ -4,6 +4,9 @@ import * as React from "react";
 import { StyleSheet, View, Text } from "react-native";
 import  { InputModel } from "../../model";
 import Routing from '../../utils/routing';
+// import { getInput } from "../../selectors/input";
+import { addItem } from "../../actions";
+import { connect } from "react-redux";
 
 const { Link } = Routing;
 
@@ -20,12 +23,12 @@ const styles = StyleSheet.create({
     flexDirection: "row"
   },
   button: {
-    backgroundColor: "#000", 
-    borderRadius: 2, 
+    backgroundColor: "#000",
+    borderRadius: 2,
     padding: 10
   },
   buttonText: {
-    "color": "#fff", 
+    "color": "#fff",
   },
   marginTop: {
     marginTop: 20,
@@ -62,4 +65,10 @@ class SecondPage extends React.Component<IProps, IState> {
   }
 }
 
-export default SecondPage;
+
+
+const mapDispatchToProps = {
+  onClicked: addItem
+};
+
+export default connect<any, any, any>(null, mapDispatchToProps)(SecondPage)
