@@ -98,14 +98,14 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { InputModel } from '../model';
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { IInputModel } from '../model';
 &nbsp;
 export enum ActionTypes {
     ADD_ITEM = 'ADD_ITEM',
     DELETE_ITEM = 'DELETE_ITEM',
 }
 &nbsp;
-export interface IAddItemAction {type: ActionTypes.ADD_ITEM, payload: {input: InputModel}}
+export interface IAddItemAction {type: ActionTypes.ADD_ITEM, payload: {input: IInputModel}}
 &nbsp;
 /**
  * Add Item Action

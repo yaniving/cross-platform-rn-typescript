@@ -1,7 +1,7 @@
 /**
- * InputModel
+ * IInputModel
  * @description input model 
  */
-export interface InputModel {
+export interface IInputModel {
     text: string;
 }

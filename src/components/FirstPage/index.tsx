@@ -2,7 +2,7 @@
 import * as React from "react";
 import { StyleSheet, View, Text } from "react-native";
 // import Sample from "../Sample";
-import  { InputModel } from "../../model";
+import  { IInputModel } from "../../model";
 import Routing from '../../utils/routing';
 // import { getInput } from "../../selectors/input";
 import { addItem } from "../../actions";
@@ -37,12 +37,12 @@ const styles = StyleSheet.create({
 
 // create props interface
 export interface IProps {
-  input: InputModel ,
+  input: IInputModel ,
   onClicked: (text: string) => void,
 }
 
 interface IState {
-  input: InputModel,
+  input: IInputModel,
 }
 
 class FirstPage extends React.Component<IProps, IState> {

@@ -178,7 +178,7 @@
 import * as React from "react";
 &nbsp;
 import { StyleSheet, View, Text } from "react-native";
-import  { InputModel } from "../../model";
+import  { IInputModel } from "../../model";
 import Routing from '../../utils/routing';
 &nbsp;
 const { Link } = Routing;
@@ -210,12 +210,12 @@ const styles = StyleSheet.create({
 &nbsp;
 // create props interface
 export interface IProps {
-  input: InputModel ,
+  input: IInputModel ,
   onClicked: (text: string) =&gt; void,
 }
 &nbsp;
 interface IState {
-  input: InputModel,
+  input: IInputModel,
 }
 &nbsp;
 class SecondPage extends React.Component&lt;IProps, IState&gt; {

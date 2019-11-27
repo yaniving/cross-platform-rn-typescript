@@ -1,11 +1,11 @@
-import { InputModel } from '../model';
+import { IInputModel } from '../model';
 
 export enum ActionTypes {
     ADD_ITEM = 'ADD_ITEM',
     DELETE_ITEM = 'DELETE_ITEM',
 }
 
-export interface IAddItemAction {type: ActionTypes.ADD_ITEM, payload: {input: InputModel}}
+export interface IAddItemAction {type: ActionTypes.ADD_ITEM, payload: {input: IInputModel}}
 
 /**
  * Add Item Action

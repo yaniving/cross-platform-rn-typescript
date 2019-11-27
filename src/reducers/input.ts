@@ -1,8 +1,8 @@
-import {InputModel} from "../model"
+import {IInputModel} from "../model"
 import { Action, ActionTypes } from "../actions";
 
 export interface IState {
-    input: InputModel
+    input: IInputModel
 }
 
 export const initialState: IState = {
